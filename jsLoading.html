@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+<!--
+    Author: Lisa Bosarge
+		Date: April 27, 2019
+    Course: INEW 2434-53400	
+
+    Filename: jsLoading.html
+   -->
+	  <meta charset="UTF-8">
+	  <title>jQuery Loading Assignment</title>
+	  
+	  <script type="text/javascript" src="jquery.js"></script>	  
+		<script type="text/javascript">
+			$(document).ready(function myFunction() {
+				$(".clickMe").click(function() {
+				alert("Loading, please wait.");
+				});
+			});		  
+			
+		  </script>	 
+</head>
+
+<body>
+		<form action="http://www.frodriguez.net/PHPStuff/TestFormDataDelay.php" onsubmit="alert('Loading, Please wait...');" method="get">
+		  Enter name: <input type="text" name="fname">
+		  <input type="submit" name="submit" value="Submit" id="submit" class="clickMe">
+		</form> 
+
+		<p>If you click the "Submit" button, the form-data will be sent to \
+		a page called "http://www.frodriguez.net/PHPStuff/TestFormDataDelay.php".</p>
+
+
+		
+</body>
+
+</html>
